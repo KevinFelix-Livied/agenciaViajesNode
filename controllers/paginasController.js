@@ -8,7 +8,7 @@ const paginaInicio = async (req, res) => { // req - lo que enviamos : res - lo q
     try {
     //consultar 3 viajes del modelo Viaje
         const resultado = await Promise.all(promiseDB);
-        res.render('Inicio', {
+        res.render('inicio', {
             pagina: 'Inicio',
             clase: 'home',
             viajes: resultado[0],
